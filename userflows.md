@@ -63,10 +63,13 @@ flowchart TD
   L1 --> L2{Allow GPS?}
   L2 -- Yes --> L3[Use GPS → Save Locality]
   L2 -- No --> L4[Enter Locality Manually → Save]
-  L3 --> I1[Interests Selection]
-  L4 --> I1
 
-  I1 --> I2[Choose Tags tech/sports/…]
+  %% New step added here
+  L3 --> PS[Profile Setup: Name, Age, Gender, Profile Pic]
+  L4 --> PS
+  PS --> I1[Interests Selection]
+
+  I1 --> I2[Choose Tags tech/sports/...]
   I2 --> I3[Save Interests]
   I3 --> Z[Home: Feed]
 ```
