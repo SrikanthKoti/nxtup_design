@@ -7,6 +7,7 @@ Paste this file into any Mermaid-compatible viewer (Mermaid Live, VS Code Mermai
 ## 1. Authentication & Onboarding
 
 ### 1.1 Login / Sign Up
+
 ```mermaid
 flowchart TD
   A[App Launch] --> B{Authenticated?}
@@ -48,6 +49,7 @@ flowchart TD
 ```
 
 ### 1.2 Onboarding Carousel - Locality + Interests
+
 ```mermaid
 flowchart TD
   H[Onboarding Carousel] --> H1[Screen 1: Discover Your Community]
@@ -79,6 +81,7 @@ flowchart TD
 ## 2. Core Tabs
 
 ### 2.1 Feed - Home
+
 ```mermaid
 flowchart TD
   Z[Feed - Home] --> Z1[Pull Posts locality + time]
@@ -108,6 +111,7 @@ flowchart TD
 ```
 
 ### 2.2 Events - Tabs: Upcoming, My Events, Past
+
 ```mermaid
 flowchart TD
   E0[Events Tab] --> E1{Sub-Tab?}
@@ -129,6 +133,7 @@ flowchart TD
 ```
 
 ### 2.2.a Event Detail
+
 ```mermaid
 flowchart TD
   EV_D[Event Detail] --> EV1[Banner, Title, Date/Time]
@@ -167,6 +172,7 @@ flowchart TD
 ```
 
 ### 2.3 Groups - Tabs: My Groups, Discover
+
 ```mermaid
 flowchart TD
   G0[Groups Tab] --> G1{Sub-Tab?}
@@ -213,6 +219,7 @@ flowchart TD
 ```
 
 ### 2.4 Chat - List, Requests, Thread
+
 ```mermaid
 flowchart TD
   C0[Chat Tab] --> C1[Conversations List]
@@ -240,6 +247,7 @@ flowchart TD
 ## 3. Side Navigation
 
 ### 3.1 Side Menu - Profile, Settings, Help, Logout
+
 ```mermaid
 flowchart TD
   S0[Top Bar → Hamburger] --> S1[Side Menu]
@@ -263,6 +271,7 @@ flowchart TD
 
   ST1 --> A1[Change Password]
   ST1 --> A2[Manage Linked Accounts - Google/Apple]
+  ST1 --> A3[Delete Account]
 
   ST2 --> N1[Toggles: Chat, Event Reminders, Group Mentions, Feed Activity]
   ST2 --> N2[Per-event/group mute optional]
@@ -287,6 +296,7 @@ flowchart TD
 ## 4. Supplemental/Conditional
 
 ### 4.1 Event Creation - Host
+
 ```mermaid
 flowchart TD
   HC0[Create Event - Events/Group] --> HC1[Form: Title, Banner, Desc]
@@ -302,6 +312,7 @@ flowchart TD
 ```
 
 ### 4.2 Error & Safety - global
+
 ```mermaid
 flowchart TD
   ERR0[Network Failure] --> ERR1[Retry Banner / Pull to Refresh]
@@ -314,6 +325,7 @@ flowchart TD
 ---
 
 ## 5. Master App Flow - Happy Path
+
 ```mermaid
 flowchart TD
   A[App Launch] --> B{Authenticated?}
