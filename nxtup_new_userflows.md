@@ -130,3 +130,32 @@ flowchart TD
   PR --> P3[Help and Support]
   PR --> P4[Logout - Confirm and Clear Session - Back to Landing Page]
 ```
+
+
+---
+
+## 6. Global Search
+
+```mermaid
+flowchart TD
+  NAV --> S0[Search Icon - Global]
+
+  %% Tap search
+  S0 --> S1[Open Search Overlay - Recently Searched]
+
+  %% Typing search
+  S1 --> S2[User Types Query]
+  S2 --> S3[Show Results - 3 Sections]
+  S3 --> SC1[Community Results]
+  S3 --> SC2[Events Results]
+  S3 --> SC3[Users Results]
+
+  %% Without typing or selecting
+  S1 --> S4[Tap Search Without Typing]
+  S4 --> S5[Open Full Search Page - Expanded View]
+
+  %% Selecting item
+  SC1 --> R1[Go to Post in Community Feed]
+  SC2 --> R2[Go to Event Detail Page]
+  SC3 --> R3[Go to User Profile Page]
+```
